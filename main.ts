@@ -1,7 +1,7 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Happy)
+    music.playMelody("D G C5 E B A C5 B ", 120)
 })
-input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.Sad)
+input.onGesture(Gesture.Shake, function () {
+    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
 })
-basic.showIcon(IconNames.Yes)
+basic.showIcon(IconNames.Chessboard)
